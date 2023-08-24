@@ -1,0 +1,79 @@
+/* html{
+    scroll-behavior: smooth;
+} */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( black 60% , rgb(62, 65, 28));
+    position: absolute;
+}
+
+.container .game{
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    margin: 90px auto;
+    box-shadow: 0px 0px 5px rgb(10, 10, 10);
+    border-radius: 10px;
+    border: solid 2px rgba(128, 128, 128, 0.365);
+    overflow: hidden;
+}
+
+
+
+.container .obstacle,
+.container .hole 
+{
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    background-color: grey;
+    left: 100%;
+    animation: movex 5s infinite linear;
+}
+
+.container .game,
+.container .hole {
+    background-color: rgb(0, 0, 0);
+}
+
+.container .hole{
+    height: 150px;
+    /* top: 120px; */
+}
+
+@keyframes movex {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: -60%;
+    }
+    
+}
+
+
+    	.container .brid {
+    	    position: absolute;
+    	    top: 10px;
+    	    left: 5%;
+    	    width: 20px;
+    	    height: 20px;
+    	    border-radius: 50px;
+    	    background-color: rgba(255, 255, 255, 0.626);
+            z-index: 111;
+    	}
+
+
+
+
+
+    
+    
+
